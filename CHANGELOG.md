@@ -1,6 +1,34 @@
 # Commander Changelog
 
-## Master
+## 0.9.0 (2019-06-12)
+
+### Breaking
+
+- Support for Swift < 4.2 has been removed.
+
+### Enhancements
+
+- Added syntax for using array as a type with `Argument` instead of using
+  `VariadicArgument`:
+
+    ```swift
+    command(Argument<[String]>("names")) { names in }
+    ```
+
+- Added support for optional arguments and options, for example:
+
+    ```swift
+    command(Argument<String?>("name")) { name in }
+    command(Option<String?>("name", default: nil)) { name in }
+    ```
+
+- Added support for using `--` to signal that subsequent values should
+  be treated as arguments instead of options.  
+  [Tamas Lustyik](https://github.com/lvsti)
+
+- Output of `--help` for group commands will now sort the commands in
+  alphabetical order.  
+  [Cameron Mc Gorian](https://github.com/sbarow)
 
 ### Bug Fixes
 
