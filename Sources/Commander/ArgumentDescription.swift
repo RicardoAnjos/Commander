@@ -27,6 +27,7 @@ extension ArgumentConvertible {
 }
 
 
+@available(*, deprecated, message: "use array as an ArgumentConvertible")
 public class VariadicArgument<T : ArgumentConvertible> : ArgumentDescriptor {
   public typealias ValueType = [T]
   public typealias Validator = (ValueType) throws -> ValueType
@@ -349,7 +350,8 @@ class Help : Error, ANSIConvertible, CustomStringConvertible {
     if let group = group {
       output.append("Commands:")
       output.append("")
-      for command in group.commands {
+      let commands = group.commands.sorted(by: { $0.name < $1.name })
+      for command in commands {
         if let description = command.description {
           output.append("    + \(command.name) - \(description)")
         } else {
@@ -411,7 +413,8 @@ class Help : Error, ANSIConvertible, CustomStringConvertible {
     if let group = group {
       output.append("Commands:")
       output.append("")
-      for command in group.commands {
+      let commands = group.commands.sorted(by: { $0.name < $1.name })
+      for command in commands {
         if let description = command.description {
           output.append("    + \(ANSI.green)\(command.name)\(ANSI.reset) - \(description)")
         } else {
