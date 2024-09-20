@@ -17,6 +17,12 @@
 		0207A1A521E35D9C0021EC98 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0207A19C21E35D9C0021EC98 /* Group.swift */; };
 		0207A1A621E35D9C0021EC98 /* ArgumentConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0207A19D21E35D9C0021EC98 /* ArgumentConvertible.swift */; };
 		0207A1A721E35E1A0021EC98 /* Commander.h in Headers */ = {isa = PBXBuildFile; fileRef = 0207A18F21E35D620021EC98 /* Commander.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		916B438F2C9D98C900BDEAF2 /* AsyncCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B438B2C9D98C900BDEAF2 /* AsyncCommands.swift */; };
+		916B43902C9D98C900BDEAF2 /* AsyncCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B438C2C9D98C900BDEAF2 /* AsyncCommand.swift */; };
+		916B43912C9D98C900BDEAF2 /* AsyncCommandType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B438D2C9D98C900BDEAF2 /* AsyncCommandType.swift */; };
+		916B43922C9D98C900BDEAF2 /* AsyncGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B438E2C9D98C900BDEAF2 /* AsyncGroup.swift */; };
+		916B43942C9D98D300BDEAF2 /* CommandError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B43932C9D98D300BDEAF2 /* CommandError.swift */; };
+		916B43962C9D98DD00BDEAF2 /* GroupError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B43952C9D98DD00BDEAF2 /* GroupError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +45,12 @@
 		0207A19B21E35D9C0021EC98 /* CommandRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandRunner.swift; sourceTree = "<group>"; };
 		0207A19C21E35D9C0021EC98 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		0207A19D21E35D9C0021EC98 /* ArgumentConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArgumentConvertible.swift; sourceTree = "<group>"; };
+		916B438B2C9D98C900BDEAF2 /* AsyncCommands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncCommands.swift; sourceTree = "<group>"; };
+		916B438C2C9D98C900BDEAF2 /* AsyncCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncCommand.swift; sourceTree = "<group>"; };
+		916B438D2C9D98C900BDEAF2 /* AsyncCommandType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncCommandType.swift; sourceTree = "<group>"; };
+		916B438E2C9D98C900BDEAF2 /* AsyncGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncGroup.swift; sourceTree = "<group>"; };
+		916B43932C9D98D300BDEAF2 /* CommandError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandError.swift; sourceTree = "<group>"; };
+		916B43952C9D98DD00BDEAF2 /* GroupError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +95,18 @@
 				0207A19D21E35D9C0021EC98 /* ArgumentConvertible.swift */,
 				0207A19721E35D9B0021EC98 /* ArgumentDescription.swift */,
 				0207A19A21E35D9C0021EC98 /* ArgumentParser.swift */,
+				916B438C2C9D98C900BDEAF2 /* AsyncCommand.swift */,
+				916B438B2C9D98C900BDEAF2 /* AsyncCommands.swift */,
+				916B438D2C9D98C900BDEAF2 /* AsyncCommandType.swift */,
+				916B438E2C9D98C900BDEAF2 /* AsyncGroup.swift */,
 				0207A19521E35D9B0021EC98 /* Command.swift */,
+				916B43932C9D98D300BDEAF2 /* CommandError.swift */,
 				0207A19B21E35D9C0021EC98 /* CommandRunner.swift */,
 				0207A19821E35D9C0021EC98 /* Commands.swift */,
 				0207A19921E35D9C0021EC98 /* CommandType.swift */,
 				0207A19621E35D9B0021EC98 /* Error.swift */,
 				0207A19C21E35D9C0021EC98 /* Group.swift */,
+				916B43952C9D98DD00BDEAF2 /* GroupError.swift */,
 			);
 			name = Sources;
 			path = Sources/Commander;
@@ -175,12 +193,18 @@
 			files = (
 				0207A1A221E35D9C0021EC98 /* CommandType.swift in Sources */,
 				0207A1A421E35D9C0021EC98 /* CommandRunner.swift in Sources */,
+				916B43902C9D98C900BDEAF2 /* AsyncCommand.swift in Sources */,
+				916B43962C9D98DD00BDEAF2 /* GroupError.swift in Sources */,
 				0207A19F21E35D9C0021EC98 /* Error.swift in Sources */,
 				0207A1A521E35D9C0021EC98 /* Group.swift in Sources */,
 				0207A1A121E35D9C0021EC98 /* Commands.swift in Sources */,
 				0207A1A021E35D9C0021EC98 /* ArgumentDescription.swift in Sources */,
 				0207A1A621E35D9C0021EC98 /* ArgumentConvertible.swift in Sources */,
+				916B43942C9D98D300BDEAF2 /* CommandError.swift in Sources */,
+				916B43912C9D98C900BDEAF2 /* AsyncCommandType.swift in Sources */,
 				0207A19E21E35D9C0021EC98 /* Command.swift in Sources */,
+				916B438F2C9D98C900BDEAF2 /* AsyncCommands.swift in Sources */,
+				916B43922C9D98C900BDEAF2 /* AsyncGroup.swift in Sources */,
 				0207A1A321E35D9C0021EC98 /* ArgumentParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
